@@ -1,0 +1,37 @@
+
+{
+  "version": "2.0.0",
+  "presentation": {
+    "reveal": "always",
+    "panel": "new"
+  },
+  "tasks": [
+    {
+      // F7
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "cabal build",
+      "type": "shell",
+      "command": "cabal build"
+    },
+    {
+      // F6
+      "group": "build",
+      "type": "shell",
+      "label": "cabal clean & build",
+      "command": "cabal clean && cabal build"
+    },
+    {
+      // F8
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "type": "shell",
+      "label": "cabal test",
+      "command": "cabal test"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+cabal-version:       >=1.10
+name:                debug-example
+version:             0.1.0.0
+author:              Stephen Checkoway
+maintainer:          s@pahtak.org
+build-type:          Simple
+
+executable debug-example
+  main-is:             Main.hs
+  other-modules:       Foo
+  build-depends:       base >=4.13 && <4.14
+  default-language:    Haskell2010
